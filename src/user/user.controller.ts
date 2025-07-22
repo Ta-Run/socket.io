@@ -8,11 +8,13 @@ export class UserController {
 
   @Post()
   create(@Body() userData: Partial<User>) {
+    console.log('post api is work')
     return this.userService.create(userData);
   }
 
   @Get()
   findAll() {
+    console.log('Get api is work')
     return this.userService.findAll();
   }
 
