@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: nest-api
+    env: node
+    rootDir: nest-backend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:dev
+    autoDeploy: true
